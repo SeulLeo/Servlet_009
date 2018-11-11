@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee   http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+ <servlet>
+  <servlet-name>ServletDemo</servlet-name>
+  <servlet-class>com.zk.myservlet.ServletDemo</servlet-class>
+ </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ServletDemo2</servlet-name>
+    <servlet-class>com.zk.myservlet.ServletDemo2</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ClearServlet</servlet-name>
+    <servlet-class>com.zk.myservlet.ClearServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ServletDemo3</servlet-name>
+    <servlet-class>com.zk.myservlet.ServletDemo3</servlet-class>
+  </servlet>
+
+
+
+ <servlet-mapping>
+ <servlet-name>ServletDemo</servlet-name>
+ <url-pattern>/demo1</url-pattern>
+ </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ServletDemo2</servlet-name>
+    <url-pattern>/demo2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ClearServlet</servlet-name>
+    <url-pattern>/servlet/clear</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ServletDemo3</servlet-name>
+    <url-pattern>/demo3</url-pattern>
+  </servlet-mapping>
+ <welcome-file-list>
+  <welcome-file>index.jsp</welcome-file>
+ </welcome-file-list>
+ <login-config>
+  <auth-method>BASIC</auth-method>
+ </login-config>
+</web-app>
